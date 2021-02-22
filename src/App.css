@@ -1,5 +1,9 @@
-html,body, #root, .App, .layout {
-    height: 100%;
+html,body, #root, .App {
+    height:-webkit-fill-available;
+}
+
+.layout {
+    height: inherit;
 }
 
 .logo {
@@ -10,5 +14,13 @@ html,body, #root, .App, .layout {
     background-color: white;
     padding: 50px;
     text-align: center;
+}
+
+.appContent {
     margin-top: 100px;
+}
+
+.ant-upload-list-item-progress,
+.ant-upload-list-item-thumbnail {
+    display: none;
 }
